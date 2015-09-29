@@ -27,7 +27,7 @@ You also need to register the LaravelGettext middleware in the app/Http/Kernel.p
 
     protected $middleware = [
         // ...
-        'Jenssegers\AB\Middleware\BeforeMiddleware',
+        'Jenssegers\AB\Middleware\AfterMiddleware',
         // ...
     ]
 
