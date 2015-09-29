@@ -42,7 +42,7 @@ class InstallCommand extends Command {
      */
     public function fire()
     {
-        $connection = Config::get('ab::connection');
+        $connection = Config::get('ab.connection');
 
         // Create experiments table.
         if ( ! Schema::connection($connection)->hasTable('experiments'))

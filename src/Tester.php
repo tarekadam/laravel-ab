@@ -170,7 +170,7 @@ class Tester {
      */
     public function getExperiments()
     {
-        return Config::get('ab::experiments', []);
+        return Config::get('ab.experiments', []);
     }
 
     /**
@@ -180,7 +180,7 @@ class Tester {
      */
     public function getGoals()
     {
-        return Config::get('ab::goals', []);
+        return Config::get('ab.goals', []);
     }
 
     /**
