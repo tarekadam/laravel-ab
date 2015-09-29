@@ -6,7 +6,7 @@ use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Foundation\Application;
 use Closure;
 
-class BeforeMiddleware implements Middleware {
+class AfterMiddleware implements Middleware {
 
     protected $app;
 
@@ -24,8 +24,11 @@ class BeforeMiddleware implements Middleware {
      */
     public function handle($request, Closure $next)
     {
+        $response = $next($request);
+
         $this->app['ab']->track($request);
-        return $next($request);
+
+        return $response;
     }
 
 }
