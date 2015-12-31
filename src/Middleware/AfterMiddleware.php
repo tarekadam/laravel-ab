@@ -6,7 +6,7 @@ use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Foundation\Application;
 use Closure;
 
-class AfterMiddleware implements Middleware {
+class AfterMiddleware {
 
     protected $app;
 

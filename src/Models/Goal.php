@@ -3,30 +3,28 @@
 use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
-class Goal extends Eloquent {
+class Goal extends Eloquent{
 
-    protected $primaryKey = 'name';
+	protected $primaryKey = 'name';
+	public $incrementing = false;
 
-    public $timestamps = false;
+	public $timestamps = false;
 
-    protected $fillable = ['name', 'experiment', 'count'];
+	protected $fillable = ['name', 'experiment', 'count'];
 
-    public function __construct(array $attributes = array())
-    {
-        parent::__construct($attributes);
+	public function __construct(array $attributes = array()){
+		parent::__construct($attributes);
 
-        // Set the connection based on the config.
-        $this->connection = Config::get('ab.connection');
-    }
+		// Set the connection based on the config.
+		$this->connection = Config::get('ab.connection');
+	}
 
-    public function scopeActive($query)
-    {
-        if ($experiments = Config::get('ab.experiments'))
-        {
-            return $query->whereIn('experiment', Config::get('ab.experiments'));
-        }
+	public function scopeActive($query){
+		if($experiments = Config::get('ab.experiments')){
+			return $query->whereIn('experiment', Config::get('ab.experiments'));
+		}
 
-        return $query;
-    }
+		return $query;
+	}
 
 }
