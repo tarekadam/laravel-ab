@@ -1,11 +1,15 @@
 {
-    "name": "jenssegers/ab",
+    "name": "tarekadam/ab",
     "description": "A server-side A/B testing tool for Laravel.",
     "keywords": ["laravel","optimizely","ab","split","testing"],
     "authors": [
         {
             "name": "Jens Segers",
             "homepage": "http://jenssegers.be"
+        },
+        {
+            "name": "Tarek Adam",
+            "homepage": "http://www.tarekadam.com"
         }
     ],
     "license" : "MIT",
