@@ -2,7 +2,6 @@
 
 use Tarekadam\AB\TesterServiceProvider;
 use Illuminate\Http\Request;
-use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Foundation\Application;
 use Closure;
 
