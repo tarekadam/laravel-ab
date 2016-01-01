@@ -1,12 +1,12 @@
-<?php namespace Jenssegers\AB;
+<?php namespace Tarekadam\AB;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
-use Jenssegers\AB\Session\SessionInterface;
-use Jenssegers\AB\Models\Experiment;
-use Jenssegers\AB\Models\Goal;
+use Tarekadam\AB\Session\SessionInterface;
+use Tarekadam\AB\Models\Experiment;
+use Tarekadam\AB\Models\Goal;
 
 class Tester {
 

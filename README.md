@@ -1,7 +1,7 @@
 Laravel 5 A/B Testing
 =====================
 
-[![Build Status](http://img.shields.io/travis/jenssegers/laravel-ab.svg)](https://travis-ci.org/jenssegers/laravel-ab) [![Coverage Status](http://img.shields.io/coveralls/jenssegers/laravel-ab.svg)](https://coveralls.io/r/jenssegers/laravel-ab)
+[![Build Status](http://img.shields.io/travis/tarekadam/laravel-ab.svg)](https://travis-ci.org/tarekadam/laravel-ab) [![Coverage Status](http://img.shields.io/coveralls/tarekadam/laravel-ab.svg)](https://coveralls.io/r/tarekadam/laravel-ab)
 
 A server-side A/B testing tool for Laravel, a great free alternative for services such as optimizely. Use A/B testing to figure out which content works, and which doesn't.
 
@@ -12,22 +12,22 @@ Installation
 
 Install using composer:
 
-    composer require jenssegers/ab
+    composer require tarekadam/laravel-ab
 
 Add the service provider in `app/config/app.php`:
 
-    'Jenssegers\AB\TesterServiceProvider',
+    'Tarekadam\AB\TesterServiceProvider',
 
 Register the AB alias:
 
-    'AB'           => 'Jenssegers\AB\Facades\AB',
+    'AB'           => 'Tarekadam\AB\Facades\AB',
     
 
 You also need to register the LaravelGettext middleware in the app/Http/Kernel.php file:
 
     protected $middleware = [
         // ...
-        'Jenssegers\AB\Middleware\AfterMiddleware',
+        'Tarekadam\AB\Middleware\AfterMiddleware',
         // ...
     ]
 

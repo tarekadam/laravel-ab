@@ -1,7 +1,7 @@
-<?php namespace Jenssegers\AB\Commands;
+<?php namespace Tarekadam\AB\Commands;
 
-use Jenssegers\AB\Models\Experiment;
-use Jenssegers\AB\Models\Goal;
+use Tarekadam\AB\Models\Experiment;
+use Tarekadam\AB\Models\Goal;
 
 use Config;
 use Schema;

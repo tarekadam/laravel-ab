@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\AB\Session;
+<?php namespace Tarekadam\AB\Session;
 
 use Illuminate\Support\Facades\Session;
 
